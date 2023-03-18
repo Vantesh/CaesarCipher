@@ -1,4 +1,5 @@
-from symbols import characters
+from symbols import characters, logo
+print(logo)
 while True:
   direction= input("Type 'encode' to encrypt or 'decode' to decrypt:  ").lower()
 
@@ -21,5 +22,6 @@ while True:
     print(f"The {direction}d message is {cipher_text}\n")
   encrypt(plain_text=text , shift_amount=shift, direction=direction)
   retry = input("retry ? (y/n): ")
+  
   if retry.lower() != "y":
     break
